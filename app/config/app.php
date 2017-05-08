@@ -125,6 +125,7 @@ return array(
 	  'Creolab\LaravelModules\ServiceProvider',
 		'Ollieread\Multiauth\MultiauthServiceProvider',
 		'Ollieread\Multiauth\Reminders\ReminderServiceProvider',
+	  'Intervention\Image\ImageServiceProvider'
 	),
 
 	/*
@@ -193,7 +194,8 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
     'Block'           => 'App\Models\Block',
     'Uri'             => 'App\Models\Uri',
-    'Base'           => 'App\Models\Base',
+    'Base'            => 'App\Models\Base',
+	  'Image' => 'Intervention\Image\Facades\Image'
 	),
 
 );

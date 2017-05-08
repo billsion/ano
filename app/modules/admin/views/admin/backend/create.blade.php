@@ -107,7 +107,8 @@ $(function() {
 	$('#input-file-avatar').uploadify({
 		'formData'     : {
 			'token'     : '<?php echo md5(csrf_token() . time()); ?>',
-			'module'    : 'admin/avatar'
+			'module'    : 'admin/avatar',
+			'size'      : '100_100'
 		},
 		'uploader' : '/backend/upload_img',
 		'buttonClass' : 'btn btn-primary',

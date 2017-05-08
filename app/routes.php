@@ -29,6 +29,15 @@ Route::group(array('prefix' => \Config::get('system.uri_prefix.backend')), funct
                     if (!is_dir($file_path)) {
                         mkdir($file_path, 0777, true);
                     }
+                    
+                    if (Input::get('size')) {
+                        $size = explode('_', Input::get('size'));
+                    } else {
+                        //从这里读取相应模块里的图片大小   
+                    }
+                    
+                    $resize_file = $file_path . '/' . "{$file_name}_{$size[0]}_{$size[1]}" . "." . strtolower($file->getClientOriginalExtension());
+                    Image::make($file->getRealPath())->fit($size[0], $size[1])->save($resize_file);
                     $file->move($file_path, $file_name. "." . strtolower($file->getClientOriginalExtension()));
                     $final = $db_path. $file_name. '.' . strtolower($file->getClientOriginalExtension());
                 }
