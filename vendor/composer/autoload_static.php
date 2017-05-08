@@ -10,9 +10,10 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'e40631d46120a9c38ea139981f8dab26' => __DIR__ . '/..' . '/ircmaxell/password-compat/lib/password.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
-        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '3919eeb97e98d4648304477f8ef734ba' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Random.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '0ccdf99b8f62f02c52cba55802e0c2e7' => __DIR__ . '/..' . '/zircote/swagger-php/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -37,6 +38,7 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\BrowserKit\\' => 29,
+            'Swagger\\' => 8,
         ),
         'P' => 
         array (
@@ -46,6 +48,10 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
         'M' => 
         array (
             'Monolog\\' => 8,
+        ),
+        'D' => 
+        array (
+            'Doctrine\\Common\\Annotations\\' => 28,
         ),
         'C' => 
         array (
@@ -119,6 +125,10 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
         array (
             0 => __DIR__ . '/..' . '/symfony/browser-kit',
         ),
+        'Swagger\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zircote/swagger-php/src',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
@@ -130,6 +140,10 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
         ),
         'Creolab\\LaravelModules\\' => 
         array (
@@ -225,6 +239,13 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
                 0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
             ),
         ),
+        'D' => 
+        array (
+            'Doctrine\\Common\\Lexer\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
+            ),
+        ),
         'C' => 
         array (
             'Crypt' => 
@@ -246,7 +267,6 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
     );
 
     public static $classMap = array (
-        'App\\Controllers\\BaseController' => __DIR__ . '/../..' . '/app/controllers/BaseController.php',
         'App\\Models\\Base' => __DIR__ . '/../..' . '/app/models/Base.php',
         'App\\Models\\Block' => __DIR__ . '/../..' . '/app/models/Block.php',
         'App\\Models\\Uri' => __DIR__ . '/../..' . '/app/models/Uri.php',
@@ -268,6 +288,7 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
         'App\\Modules\\System\\Models\\System\\Resource' => __DIR__ . '/../..' . '/app/modules/system/models/system/Resource.php',
         'App\\Modules\\System\\Services\\System\\Menu' => __DIR__ . '/../..' . '/app/modules/system/services/system/Menu.php',
         'App\\Modules\\System\\SystemServiceProvider' => __DIR__ . '/../..' . '/app/modules/system/SystemServiceProvider.php',
+        'BaseController' => __DIR__ . '/../..' . '/app/controllers/BaseController.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/app/database/seeds/DatabaseSeeder.php',
         'HomeController' => __DIR__ . '/../..' . '/app/controllers/HomeController.php',
         'IlluminateQueueClosure' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php',

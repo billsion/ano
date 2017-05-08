@@ -1,3 +1,9 @@
+# Abandoned
+
+**This package is no longer maintained.**
+
+I encourage you to use composer packages for your modules to get the most flexibility out of it.
+
 # Modules in Laravel 4
 
 Application specific modules in Laravel 4 can be enabled by adding the following to your **"composer.json"** file:
@@ -213,4 +219,6 @@ If you declare Facades into your modules you will like to create Aliases for you
     	"<MyAlias>" "App\\Modules\\<MyModule>\\Facades\\<MyFacade>"
     }
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/creolab/laravel-modules/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+# License
+
+Thi package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).

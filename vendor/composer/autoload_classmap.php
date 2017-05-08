@@ -6,7 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Controllers\\BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'App\\Models\\Base' => $baseDir . '/app/models/Base.php',
     'App\\Models\\Block' => $baseDir . '/app/models/Block.php',
     'App\\Models\\Uri' => $baseDir . '/app/models/Uri.php',
@@ -28,6 +27,7 @@ return array(
     'App\\Modules\\System\\Models\\System\\Resource' => $baseDir . '/app/modules/system/models/system/Resource.php',
     'App\\Modules\\System\\Services\\System\\Menu' => $baseDir . '/app/modules/system/services/system/Menu.php',
     'App\\Modules\\System\\SystemServiceProvider' => $baseDir . '/app/modules/system/SystemServiceProvider.php',
+    'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'DatabaseSeeder' => $baseDir . '/app/database/seeds/DatabaseSeeder.php',
     'HomeController' => $baseDir . '/app/controllers/HomeController.php',
     'IlluminateQueueClosure' => $vendorDir . '/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php',
