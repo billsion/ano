@@ -51,6 +51,10 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
         array (
             'Monolog\\' => 8,
         ),
+        'L' => 
+        array (
+            'League\\Fractal\\' => 15,
+        ),
         'I' => 
         array (
             'Intervention\\Image\\' => 19,
@@ -62,6 +66,7 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
         'D' => 
         array (
             'Doctrine\\Common\\Annotations\\' => 28,
+            'Dingo\\Api\\' => 10,
         ),
         'C' => 
         array (
@@ -155,6 +160,10 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'League\\Fractal\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/fractal/src',
+        ),
         'Intervention\\Image\\' => 
         array (
             0 => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image',
@@ -166,6 +175,10 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
         'Doctrine\\Common\\Annotations\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Dingo\\Api\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dingo/api/src',
         ),
         'Creolab\\LaravelModules\\' => 
         array (
@@ -286,6 +299,13 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
                 0 => __DIR__ . '/..' . '/d11wtq/boris/lib',
             ),
         ),
+        'A' => 
+        array (
+            'Atan\\Wechat\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/atan/wechat/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
@@ -303,6 +323,8 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
         'App\\Modules\\Admin\\Models\\Admin\\Role\\Menu' => __DIR__ . '/../..' . '/app/modules/admin/models/admin/role/Menu.php',
         'App\\Modules\\Admin\\Services\\Admin' => __DIR__ . '/../..' . '/app/modules/admin/services/Admin.php',
         'App\\Modules\\Admin\\Services\\Admin\\Role' => __DIR__ . '/../..' . '/app/modules/admin/services/admin/Role.php',
+        'App\\Modules\\Kong\\Controllers\\Backend\\Kong\\ApiController' => __DIR__ . '/../..' . '/app/modules/kong/controllers/backend/kong/ApiController.php',
+        'App\\Modules\\Kong\\KongServiceProvider' => __DIR__ . '/../..' . '/app/modules/kong/KongServiceProvider.php',
         'App\\Modules\\System\\Controllers\\Backend\\SystemController' => __DIR__ . '/../..' . '/app/modules/system/controllers/backend/system/SystemController.php',
         'App\\Modules\\System\\Controllers\\Backend\\System\\MenuController' => __DIR__ . '/../..' . '/app/modules/system/controllers/backend/system/MenuController.php',
         'App\\Modules\\System\\Controllers\\Backend\\System\\ResourceController' => __DIR__ . '/../..' . '/app/modules/system/controllers/backend/system/ResourceController.php',
@@ -310,6 +332,12 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
         'App\\Modules\\System\\Models\\System\\Resource' => __DIR__ . '/../..' . '/app/modules/system/models/system/Resource.php',
         'App\\Modules\\System\\Services\\System\\Menu' => __DIR__ . '/../..' . '/app/modules/system/services/system/Menu.php',
         'App\\Modules\\System\\SystemServiceProvider' => __DIR__ . '/../..' . '/app/modules/system/SystemServiceProvider.php',
+        'Atan\\Wechat\\ErrorCode' => __DIR__ . '/..' . '/atan/wechat/src/Atan/Wechat/Wechat.php',
+        'Atan\\Wechat\\Facades\\Wechat' => __DIR__ . '/..' . '/atan/wechat/src/Atan/Wechat/Facades/Wechat.php',
+        'Atan\\Wechat\\PKCS7Encoder' => __DIR__ . '/..' . '/atan/wechat/src/Atan/Wechat/Wechat.php',
+        'Atan\\Wechat\\Prpcrypt' => __DIR__ . '/..' . '/atan/wechat/src/Atan/Wechat/Wechat.php',
+        'Atan\\Wechat\\Wechat' => __DIR__ . '/..' . '/atan/wechat/src/Atan/Wechat/Wechat.php',
+        'Atan\\Wechat\\WechatServiceProvider' => __DIR__ . '/..' . '/atan/wechat/src/Atan/Wechat/WechatServiceProvider.php',
         'BaseController' => __DIR__ . '/../..' . '/app/controllers/BaseController.php',
         'Boris\\Boris' => __DIR__ . '/..' . '/d11wtq/boris/lib/Boris/Boris.php',
         'Boris\\CLIOptionsHandler' => __DIR__ . '/..' . '/d11wtq/boris/lib/Boris/CLIOptionsHandler.php',
@@ -359,6 +387,60 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
         'Crypt_TripleDES' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/TripleDES.php',
         'Crypt_Twofish' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Twofish.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/app/database/seeds/DatabaseSeeder.php',
+        'Dingo\\Api\\Auth\\Authenticator' => __DIR__ . '/..' . '/dingo/api/src/Auth/Authenticator.php',
+        'Dingo\\Api\\Auth\\AuthorizationProvider' => __DIR__ . '/..' . '/dingo/api/src/Auth/AuthorizationProvider.php',
+        'Dingo\\Api\\Auth\\BasicProvider' => __DIR__ . '/..' . '/dingo/api/src/Auth/BasicProvider.php',
+        'Dingo\\Api\\Auth\\JWTProvider' => __DIR__ . '/..' . '/dingo/api/src/Auth/JWTProvider.php',
+        'Dingo\\Api\\Auth\\LeagueOAuth2Provider' => __DIR__ . '/..' . '/dingo/api/src/Auth/LeagueOAuth2Provider.php',
+        'Dingo\\Api\\Auth\\ProviderInterface' => __DIR__ . '/..' . '/dingo/api/src/Auth/ProviderInterface.php',
+        'Dingo\\Api\\Console\\ApiRoutesCommand' => __DIR__ . '/..' . '/dingo/api/src/Console/ApiRoutesCommand.php',
+        'Dingo\\Api\\Dispatcher' => __DIR__ . '/..' . '/dingo/api/src/Dispatcher.php',
+        'Dingo\\Api\\Event\\ExceptionHandler' => __DIR__ . '/..' . '/dingo/api/src/Event/ExceptionHandler.php',
+        'Dingo\\Api\\Event\\RevisingHandler' => __DIR__ . '/..' . '/dingo/api/src/Event/RevisingHandler.php',
+        'Dingo\\Api\\Exception\\DeleteResourceFailedException' => __DIR__ . '/..' . '/dingo/api/src/Exception/DeleteResourceFailedException.php',
+        'Dingo\\Api\\Exception\\Handler' => __DIR__ . '/..' . '/dingo/api/src/Exception/Handler.php',
+        'Dingo\\Api\\Exception\\InternalHttpException' => __DIR__ . '/..' . '/dingo/api/src/Exception/InternalHttpException.php',
+        'Dingo\\Api\\Exception\\InvalidAcceptHeaderException' => __DIR__ . '/..' . '/dingo/api/src/Exception/InvalidAcceptHeaderException.php',
+        'Dingo\\Api\\Exception\\ResourceException' => __DIR__ . '/..' . '/dingo/api/src/Exception/ResourceException.php',
+        'Dingo\\Api\\Exception\\StoreResourceFailedException' => __DIR__ . '/..' . '/dingo/api/src/Exception/StoreResourceFailedException.php',
+        'Dingo\\Api\\Exception\\UpdateResourceFailedException' => __DIR__ . '/..' . '/dingo/api/src/Exception/UpdateResourceFailedException.php',
+        'Dingo\\Api\\Facade\\API' => __DIR__ . '/..' . '/dingo/api/src/Facade/API.php',
+        'Dingo\\Api\\Http\\Filter\\AuthFilter' => __DIR__ . '/..' . '/dingo/api/src/Http/Filter/AuthFilter.php',
+        'Dingo\\Api\\Http\\Filter\\Filter' => __DIR__ . '/..' . '/dingo/api/src/Http/Filter/Filter.php',
+        'Dingo\\Api\\Http\\Filter\\RateLimitFilter' => __DIR__ . '/..' . '/dingo/api/src/Http/Filter/RateLimitFilter.php',
+        'Dingo\\Api\\Http\\InternalRequest' => __DIR__ . '/..' . '/dingo/api/src/Http/InternalRequest.php',
+        'Dingo\\Api\\Http\\RateLimit\\AuthenticatedThrottle' => __DIR__ . '/..' . '/dingo/api/src/Http/RateLimit/AuthenticatedThrottle.php',
+        'Dingo\\Api\\Http\\RateLimit\\RateLimiter' => __DIR__ . '/..' . '/dingo/api/src/Http/RateLimit/RateLimiter.php',
+        'Dingo\\Api\\Http\\RateLimit\\RouteSpecificThrottle' => __DIR__ . '/..' . '/dingo/api/src/Http/RateLimit/RouteSpecificThrottle.php',
+        'Dingo\\Api\\Http\\RateLimit\\Throttle' => __DIR__ . '/..' . '/dingo/api/src/Http/RateLimit/Throttle.php',
+        'Dingo\\Api\\Http\\RateLimit\\ThrottleInterface' => __DIR__ . '/..' . '/dingo/api/src/Http/RateLimit/ThrottleInterface.php',
+        'Dingo\\Api\\Http\\RateLimit\\UnauthenticatedThrottle' => __DIR__ . '/..' . '/dingo/api/src/Http/RateLimit/UnauthenticatedThrottle.php',
+        'Dingo\\Api\\Http\\Response' => __DIR__ . '/..' . '/dingo/api/src/Http/Response.php',
+        'Dingo\\Api\\Http\\ResponseBuilder' => __DIR__ . '/..' . '/dingo/api/src/Http/ResponseBuilder.php',
+        'Dingo\\Api\\Http\\ResponseFactory' => __DIR__ . '/..' . '/dingo/api/src/Http/ResponseFactory.php',
+        'Dingo\\Api\\Http\\ResponseFormat\\JsonResponseFormat' => __DIR__ . '/..' . '/dingo/api/src/Http/ResponseFormat/JsonResponseFormat.php',
+        'Dingo\\Api\\Http\\ResponseFormat\\JsonpResponseFormat' => __DIR__ . '/..' . '/dingo/api/src/Http/ResponseFormat/JsonpResponseFormat.php',
+        'Dingo\\Api\\Http\\ResponseFormat\\ResponseFormat' => __DIR__ . '/..' . '/dingo/api/src/Http/ResponseFormat/ResponseFormat.php',
+        'Dingo\\Api\\Properties' => __DIR__ . '/..' . '/dingo/api/src/Properties.php',
+        'Dingo\\Api\\Provider\\ApiServiceProvider' => __DIR__ . '/..' . '/dingo/api/src/Provider/ApiServiceProvider.php',
+        'Dingo\\Api\\Provider\\EventServiceProvider' => __DIR__ . '/..' . '/dingo/api/src/Provider/EventServiceProvider.php',
+        'Dingo\\Api\\Provider\\FilterServiceProvider' => __DIR__ . '/..' . '/dingo/api/src/Provider/FilterServiceProvider.php',
+        'Dingo\\Api\\Provider\\PropertiesServiceProvider' => __DIR__ . '/..' . '/dingo/api/src/Provider/PropertiesServiceProvider.php',
+        'Dingo\\Api\\Provider\\RoutingServiceProvider' => __DIR__ . '/..' . '/dingo/api/src/Provider/RoutingServiceProvider.php',
+        'Dingo\\Api\\Routing\\ControllerDispatcher' => __DIR__ . '/..' . '/dingo/api/src/Routing/ControllerDispatcher.php',
+        'Dingo\\Api\\Routing\\ControllerInspector' => __DIR__ . '/..' . '/dingo/api/src/Routing/ControllerInspector.php',
+        'Dingo\\Api\\Routing\\ControllerReviser' => __DIR__ . '/..' . '/dingo/api/src/Routing/ControllerReviser.php',
+        'Dingo\\Api\\Routing\\ControllerTrait' => __DIR__ . '/..' . '/dingo/api/src/Routing/ControllerTrait.php',
+        'Dingo\\Api\\Routing\\GroupCollection' => __DIR__ . '/..' . '/dingo/api/src/Routing/GroupCollection.php',
+        'Dingo\\Api\\Routing\\Route' => __DIR__ . '/..' . '/dingo/api/src/Routing/Route.php',
+        'Dingo\\Api\\Routing\\RouteCollection' => __DIR__ . '/..' . '/dingo/api/src/Routing/RouteCollection.php',
+        'Dingo\\Api\\Routing\\Router' => __DIR__ . '/..' . '/dingo/api/src/Routing/Router.php',
+        'Dingo\\Api\\Routing\\UrlGenerator' => __DIR__ . '/..' . '/dingo/api/src/Routing/UrlGenerator.php',
+        'Dingo\\Api\\Transformer\\Binding' => __DIR__ . '/..' . '/dingo/api/src/Transformer/Binding.php',
+        'Dingo\\Api\\Transformer\\FractalTransformer' => __DIR__ . '/..' . '/dingo/api/src/Transformer/FractalTransformer.php',
+        'Dingo\\Api\\Transformer\\TransformableInterface' => __DIR__ . '/..' . '/dingo/api/src/Transformer/TransformableInterface.php',
+        'Dingo\\Api\\Transformer\\TransformerFactory' => __DIR__ . '/..' . '/dingo/api/src/Transformer/TransformerFactory.php',
+        'Dingo\\Api\\Transformer\\TransformerInterface' => __DIR__ . '/..' . '/dingo/api/src/Transformer/TransformerInterface.php',
         'Doctrine\\Common\\Annotations\\Annotation' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/Annotation.php',
         'Doctrine\\Common\\Annotations\\AnnotationException' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationException.php',
         'Doctrine\\Common\\Annotations\\AnnotationReader' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationReader.php',
@@ -908,6 +990,24 @@ class ComposerStaticInit3ed58a1df2af8595171c87ffc72fb435
         'Jeremeamia\\SuperClosure\\SerializableClosure' => __DIR__ . '/..' . '/jeremeamia/SuperClosure/src/Jeremeamia/SuperClosure/SerializableClosure.php',
         'Jeremeamia\\SuperClosure\\Visitor\\ClosureFinderVisitor' => __DIR__ . '/..' . '/jeremeamia/SuperClosure/src/Jeremeamia/SuperClosure/Visitor/ClosureFinderVisitor.php',
         'Jeremeamia\\SuperClosure\\Visitor\\MagicConstantVisitor' => __DIR__ . '/..' . '/jeremeamia/SuperClosure/src/Jeremeamia/SuperClosure/Visitor/MagicConstantVisitor.php',
+        'League\\Fractal\\Manager' => __DIR__ . '/..' . '/league/fractal/src/Manager.php',
+        'League\\Fractal\\Pagination\\Cursor' => __DIR__ . '/..' . '/league/fractal/src/Pagination/Cursor.php',
+        'League\\Fractal\\Pagination\\CursorInterface' => __DIR__ . '/..' . '/league/fractal/src/Pagination/CursorInterface.php',
+        'League\\Fractal\\Pagination\\IlluminatePaginatorAdapter' => __DIR__ . '/..' . '/league/fractal/src/Pagination/IlluminatePaginatorAdapter.php',
+        'League\\Fractal\\Pagination\\PagerfantaPaginatorAdapter' => __DIR__ . '/..' . '/league/fractal/src/Pagination/PagerfantaPaginatorAdapter.php',
+        'League\\Fractal\\Pagination\\PaginatorInterface' => __DIR__ . '/..' . '/league/fractal/src/Pagination/PaginatorInterface.php',
+        'League\\Fractal\\Pagination\\ZendFrameworkPaginatorAdapter' => __DIR__ . '/..' . '/league/fractal/src/Pagination/ZendFrameworkPaginatorAdapter.php',
+        'League\\Fractal\\ParamBag' => __DIR__ . '/..' . '/league/fractal/src/ParamBag.php',
+        'League\\Fractal\\Resource\\Collection' => __DIR__ . '/..' . '/league/fractal/src/Resource/Collection.php',
+        'League\\Fractal\\Resource\\Item' => __DIR__ . '/..' . '/league/fractal/src/Resource/Item.php',
+        'League\\Fractal\\Resource\\ResourceAbstract' => __DIR__ . '/..' . '/league/fractal/src/Resource/ResourceAbstract.php',
+        'League\\Fractal\\Resource\\ResourceInterface' => __DIR__ . '/..' . '/league/fractal/src/Resource/ResourceInterface.php',
+        'League\\Fractal\\Scope' => __DIR__ . '/..' . '/league/fractal/src/Scope.php',
+        'League\\Fractal\\Serializer\\ArraySerializer' => __DIR__ . '/..' . '/league/fractal/src/Serializer/ArraySerializer.php',
+        'League\\Fractal\\Serializer\\DataArraySerializer' => __DIR__ . '/..' . '/league/fractal/src/Serializer/DataArraySerializer.php',
+        'League\\Fractal\\Serializer\\JsonApiSerializer' => __DIR__ . '/..' . '/league/fractal/src/Serializer/JsonApiSerializer.php',
+        'League\\Fractal\\Serializer\\SerializerAbstract' => __DIR__ . '/..' . '/league/fractal/src/Serializer/SerializerAbstract.php',
+        'League\\Fractal\\TransformerAbstract' => __DIR__ . '/..' . '/league/fractal/src/TransformerAbstract.php',
         'Maatwebsite\\Excel\\Classes\\Cache' => __DIR__ . '/..' . '/maatwebsite/excel/src/Maatwebsite/Excel/Classes/Cache.php',
         'Maatwebsite\\Excel\\Classes\\FormatIdentifier' => __DIR__ . '/..' . '/maatwebsite/excel/src/Maatwebsite/Excel/Classes/FormatIdentifier.php',
         'Maatwebsite\\Excel\\Classes\\LaravelExcelWorksheet' => __DIR__ . '/..' . '/maatwebsite/excel/src/Maatwebsite/Excel/Classes/LaravelExcelWorksheet.php',

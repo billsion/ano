@@ -125,7 +125,8 @@ return array(
 	  'Creolab\LaravelModules\ServiceProvider',
 		'Ollieread\Multiauth\MultiauthServiceProvider',
 		'Ollieread\Multiauth\Reminders\ReminderServiceProvider',
-	  'Intervention\Image\ImageServiceProvider'
+	  'Intervention\Image\ImageServiceProvider',
+	  'Dingo\Api\Provider\ApiServiceProvider'
 	),
 
 	/*

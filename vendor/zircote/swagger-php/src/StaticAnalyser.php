@@ -29,6 +29,16 @@ class StaticAnalyser
      */
     public function fromFile($filename)
     {
+        if (function_exists('opcache_get_status') && function_exists('opcache_get_configuration')) {
+            if (empty($GLOBALS['swagger_opcache_warning'])) {
+                $GLOBALS['swagger_opcache_warning'] = true;
+                $status = opcache_get_status();
+                $config = opcache_get_configuration();
+                if ($status['opcache_enabled'] && $config['directives']['opcache.save_comments'] == false) {
+                    Logger::warning("php.ini \"opcache.save_comments = 0\" interferes with extracting annotations.\n[LINK] http://php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments");
+                }
+            }
+        }
         $tokens = token_get_all(file_get_contents($filename));
         return $this->fromTokens($tokens, new Context(['filename' => $filename]));
     }
