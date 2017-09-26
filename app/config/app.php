@@ -122,11 +122,12 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-	  'Creolab\LaravelModules\ServiceProvider',
+	    'Creolab\LaravelModules\ServiceProvider',
 		'Ollieread\Multiauth\MultiauthServiceProvider',
 		'Ollieread\Multiauth\Reminders\ReminderServiceProvider',
-	  'Intervention\Image\ImageServiceProvider',
-	  'Dingo\Api\Provider\ApiServiceProvider'
+	    'Intervention\Image\ImageServiceProvider',
+	    'Dingo\Api\Provider\ApiServiceProvider',
+        'Ano\Tool\ToolServiceProvider'
 	),
 
 	/*
